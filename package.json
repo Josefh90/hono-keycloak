@@ -1,0 +1,39 @@
+{
+  "name": "@josefh90/hono-keycloak",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Hono middleware for Keycloak JWT authentication",
+  "keywords": ["hono", "keycloak", "jwt", "middleware", "auth", "oidc", "authentication", "authorization", "bearer", "token", "jwks", "typescript", "hono-middleware"],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "hono": ">=4.0.0",
+    "jose": "^5.10.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": ["dist", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Josefh90/hono-keycloak.git"
+  },
+  "homepage": "https://github.com/Josefh90/hono-keycloak#readme",
+  "bugs": {
+    "url": "https://github.com/Josefh90/hono-keycloak/issues"
+  }
+}
